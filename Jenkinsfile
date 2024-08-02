@@ -5,13 +5,13 @@ pipeline {
         
         stage("code"){
             steps{
-                git url: "https://github.com/rrajeshkm/node-todo-cicd.git", branch: "main"
+                git url: "https://github.com/rrajeshkm/project-todo-cicd.git", branch: "main"
                 echo 'bhaiyya code clone ho gaya'
             }
         }
         stage("build and test"){
             steps{
-                sh "docker build -t node-app-test-new ."
+                sh "docker build -t node-app-batch-6."
                 echo 'code build bhi ho gaya'
             }
         }
