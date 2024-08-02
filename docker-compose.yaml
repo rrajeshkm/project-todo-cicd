@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   web:
     image: "rajeshrkm/node-app-batch-6:latest"
