@@ -24,8 +24,8 @@ pipeline {
             steps{
                 withCredentials([usernamePassword(credentialsId:"dockerHub",passwordVariable:"dockerHubPass",usernameVariable:"dockerHubUser")]){
                 sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass}"
-                sh "docker tag node-app-batch-6:latest ${env.dockerHubUser}/node-app-batch-6:latest"
-                sh "docker push ${env.dockerHubUser}/node-app-batch-6:latest"
+                sh "docker tag node-app-nodejs:latest ${env.dockerHubUser}/node-app-nodejs:latest"
+                sh "docker push ${env.dockerHubUser}/node-app-nodejs:latest"
                 echo 'image push ho gaya'
                 }
             }
