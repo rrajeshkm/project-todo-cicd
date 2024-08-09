@@ -1,5 +1,5 @@
 services:
   web:
-    image: "rajeshrkm/node-app-batch-6:latest"
+    image: "rajeshrkm/node-app-nodejs:latest"
     ports:
       - "8000:8000"
